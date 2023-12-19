@@ -1,0 +1,63 @@
+/*Main-Quienes-Somos Style*/
+.main-qs {
+    .explicación {
+        .charla-div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 40px;
+            .charla-img {
+                margin-left: 60px;
+                .charla {
+                    width: 400px;
+                    border-radius: 10px;
+                    margin-left: 50px;
+                    margin-top: 20px;
+                    transition: transform 0.3s ease-out;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .text-charla {
+                margin-top: 35px;
+                .p-charla {
+                    text-align: center;
+                    background-color: rgba(14, 135, 183, 0.5);
+                    margin-right: 60px;
+                    border-radius: 10px;
+                    padding: 40px 20px 30px 20px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }
+        .firma-div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 40px;
+            .firma-img {
+                margin-left: 140px;
+                .firma {
+                    width: 400px;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    transition: transform 0.3s ease-out;
+                    &:hover {   
+                        transform: scale(1.05);
+                    }
+                }
+            } 
+            .text-firma {
+                margin-top: 50px;
+                .p-firma{
+                    text-align: center;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    margin-left: 60px;
+                    border-radius: 10px;
+                    padding: 40px 20px 30px 20px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }
+    }
+}

@@ -56,16 +56,16 @@
     margin-top: 10px;
 } */
 
-ul li {
+/* ul li {
     display: inline;
     padding-left: 20px;
-}
+} */
 
 /* .servicios {
     border-top: 4px solid grey;
 } */
 
-.quienes-somos-main {
+/* .quienes-somos-main {
     width: 30cm;
     margin-left: 110px;
     margin-top: 10px;
@@ -80,7 +80,7 @@ ul li {
 .servicio, .muestra-autos, .entrega-llaves {
     margin: 10px;
     width: 200px;
-}
+} */
 
 /* fOOOTER */
 /* .logos-redes {
@@ -145,9 +145,9 @@ h3 {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 } */
 
-.contact-wrapper > * {
+/* .contact-wrapper > * {
     padding: 1em;
-}
+} */
 
 /* .contact-form {
     background: #222222;
@@ -250,7 +250,7 @@ h3 {
     font-size: 20px;
 } */
 /* Estilo Ubicación */
-.mapa {
+/* .mapa {
     position: relative;
     overflow: hidden;
     width: 60%;
@@ -260,7 +260,7 @@ h3 {
 }
 
   /* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
+/* .responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -275,7 +275,7 @@ h3 {
 
 .calle {
     text-align: center;
-}
+} */
 /* Estilo Quienes Somos */
 
 .charla, .firma {

@@ -90,6 +90,9 @@ footer .logos a .logos-redes {
 .main-ventas {
   padding-top: 10px;
 }
+.main-ventas .h1-ventas {
+  text-align: center;
+}
 .main-ventas .cards-ventas {
   justify-content: center;
   display: grid;
@@ -173,9 +176,11 @@ footer .logos a .logos-redes {
 /* Main Ubicación Style*/
 .main-ubicación h1 {
   text-align: center;
+  padding-top: 10px;
 }
 .main-ubicación .section-ubi .calle {
   text-align: center;
+  padding-top: 5px;
 }
 .main-ubicación .section-ubi .mapa-container {
   margin: 0;
@@ -189,6 +194,67 @@ footer .logos a .logos-redes {
   width: 80%;
   height: 60vh;
   border: none;
+  border-radius: 10px;
+}
+
+/*Main-Quienes-Somos Style*/
+.main-qs .explicación .charla-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+}
+.main-qs .explicación .charla-div .charla-img {
+  margin-left: 60px;
+}
+.main-qs .explicación .charla-div .charla-img .charla {
+  width: 400px;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-out;
+}
+.main-qs .explicación .charla-div .charla-img .charla:hover {
+  transform: scale(1.05);
+}
+.main-qs .explicación .charla-div .text-charla {
+  margin-top: 35px;
+}
+.main-qs .explicación .charla-div .text-charla .p-charla {
+  text-align: center;
+  background-color: rgba(14, 135, 183, 0.5);
+  margin-right: 60px;
+  border-radius: 10px;
+  padding: 40px 20px 30px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.main-qs .explicación .firma-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 40px;
+}
+.main-qs .explicación .firma-div .firma-img {
+  margin-left: 140px;
+}
+.main-qs .explicación .firma-div .firma-img .firma {
+  width: 400px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: transform 0.3s ease-out;
+}
+.main-qs .explicación .firma-div .firma-img .firma:hover {
+  transform: scale(1.05);
+}
+.main-qs .explicación .firma-div .text-firma {
+  margin-top: 50px;
+}
+.main-qs .explicación .firma-div .text-firma .p-firma {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 60px;
+  border-radius: 10px;
+  padding: 40px 20px 30px 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*Media Querie Desktop Home*/
@@ -230,7 +296,7 @@ footer .logos a .logos-redes {
   }
   .main-ventas .cards-ventas {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-gap: 20px;
   }
 }
@@ -254,12 +320,86 @@ footer .logos a .logos-redes {
     border-radius: 10px;
   }
 }
+/*Media Querie Tablet Quienes Somos*/
+@media screen and (max-width: 1024px) {
+  .main-qs .explicación .charla-div {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin-top: 40px;
+  }
+  .main-qs .explicación .charla-div .charla-img {
+    margin-left: 200px;
+  }
+  .main-qs .explicación .charla-div .charla-img .charla {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 3cm;
+    margin-top: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  .main-qs .explicación .charla-div .charla-img .charla:hover {
+    transform: scale(1.05);
+  }
+  .main-qs .explicación .charla-div .text-charla {
+    margin-top: 35px;
+  }
+  .main-qs .explicación .charla-div .text-charla .p-charla {
+    text-align: center;
+    background-color: rgba(14, 135, 183, 0.5);
+    margin-left: 60px;
+    border-radius: 10px;
+    padding: 40px 20px 30px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .main-qs .explicación .firma-div {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin-top: 40px;
+  }
+  .main-qs .explicación .firma-div .firma-img {
+    margin-left: 200px;
+  }
+  .main-qs .explicación .firma-div .firma-img .firma {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 3cm;
+    margin-top: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  .main-qs .explicación .firma-div .firma-img .firma:hover {
+    transform: scale(1.05);
+  }
+  .main-qs .explicación .firma-div .text-firma {
+    margin-top: 50px;
+  }
+  .main-qs .explicación .firma-div .text-firma .p-firma {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 40px;
+    border-radius: 10px;
+    padding: 40px 15px 30px 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+}
 /* Media Mobile Home*/
 @media screen and (max-width: 768px) {
   .main-index .servicios .autos-home {
     display: block;
   }
 }
+/*Media Mobile Ventas*/
+@media screen and (max-width: 768px) {
+  .main-ventas .h1-ventas {
+    text-align: center;
+    padding-left: 65px;
+  }
+  .main-ventas .cards-ventas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+/*Media Mobile Ubicación*/
 @media (max-width: 768px) {
   .main-ubicación h1 {
     text-align: center;
@@ -277,6 +417,71 @@ footer .logos a .logos-redes {
   }
   .main-ubicación .section-ubi .mapa-container .responsive-iframe {
     border-radius: 10px;
+  }
+}
+/*Media Mobile Quienes Somos*/
+@media screen and (max-width: 768px) {
+  .main-qs .explicación .charla-div {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    margin-top: 40px;
+    padding-bottom: 60px;
+    border-bottom: solid 3px white;
+  }
+  .main-qs .explicación .charla-div .charla-img {
+    margin-left: 0.5cm;
+  }
+  .main-qs .explicación .charla-div .charla-img .charla {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 1cm;
+    margin-top: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  .main-qs .explicación .charla-div .charla-img .charla:hover {
+    transform: scale(1.05);
+  }
+  .main-qs .explicación .charla-div .text-charla {
+    margin-top: 35px;
+  }
+  .main-qs .explicación .charla-div .text-charla .p-charla {
+    text-align: center;
+    background-color: rgba(14, 135, 183, 0.5);
+    margin-left: 60px;
+    border-radius: 10px;
+    padding: 40px 20px 30px 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  .main-qs .explicación .firma-div {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    padding-bottom: 30px;
+    margin-top: 40px;
+    border-bottom: solid 3px #0E87B7;
+  }
+  .main-qs .explicación .firma-div .firma-img {
+    margin-left: 0.5cm;
+  }
+  .main-qs .explicación .firma-div .firma-img .firma {
+    width: 400px;
+    border-radius: 10px;
+    margin-left: 1cm;
+    margin-top: 20px;
+    transition: transform 0.3s ease-out;
+  }
+  .main-qs .explicación .firma-div .firma-img .firma:hover {
+    transform: scale(1.05);
+  }
+  .main-qs .explicación .firma-div .text-firma {
+    margin-top: 50px;
+  }
+  .main-qs .explicación .firma-div .text-firma .p-firma {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-right: 70px;
+    border-radius: 10px;
+    padding: 10px 5px 10px 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
 }
 
