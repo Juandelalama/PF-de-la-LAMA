@@ -386,17 +386,24 @@ footer .logos a .logos-redes {
   .main-index .servicios .autos-home {
     display: block;
   }
+  .main-index .servicios .autos-home .item #imagen-autos-main {
+    width: 250px;
+    height: 150px;
+  }
 }
 /*Media Mobile Ventas*/
 @media screen and (max-width: 768px) {
   .main-ventas .h1-ventas {
-    text-align: center;
-    padding-left: 65px;
+    padding-left: 40px;
   }
   .main-ventas .cards-ventas {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
+    padding-left: 26px;
+  }
+  .main-ventas .cards-ventas .card .card-img-top {
+    height: 150px;
   }
 }
 /*Media Mobile Ubicación*/
@@ -432,9 +439,9 @@ footer .logos a .logos-redes {
     margin-left: 0.5cm;
   }
   .main-qs .explicación .charla-div .charla-img .charla {
-    width: 400px;
+    width: 250px;
     border-radius: 10px;
-    margin-left: 1cm;
+    margin-left: 1.3cm;
     margin-top: 20px;
     transition: transform 0.3s ease-out;
   }
@@ -463,9 +470,9 @@ footer .logos a .logos-redes {
     margin-left: 0.5cm;
   }
   .main-qs .explicación .firma-div .firma-img .firma {
-    width: 400px;
+    width: 250px;
     border-radius: 10px;
-    margin-left: 1cm;
+    margin-left: 1.2cm;
     margin-top: 20px;
     transition: transform 0.3s ease-out;
   }
@@ -478,7 +485,7 @@ footer .logos a .logos-redes {
   .main-qs .explicación .firma-div .text-firma .p-firma {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.5);
-    margin-right: 70px;
+    margin-right: 50px;
     border-radius: 10px;
     padding: 10px 5px 10px 5px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
