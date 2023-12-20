@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/*Variables*/
 /* Globals */
 body {
   background-color: #1A1A1A;
@@ -462,8 +463,8 @@ footer .logos a .logos-redes {
   .main-qs .explicación .firma-div {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    padding-bottom: 30px;
     margin-top: 40px;
+    padding-bottom: 30px;
     border-bottom: solid 3px #0E87B7;
   }
   .main-qs .explicación .firma-div .firma-img {

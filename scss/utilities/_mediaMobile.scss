@@ -64,15 +64,13 @@
     .main-qs {
         .explicación {
             .charla-div {
-                display: grid;
-                grid-template-columns: repeat(1, 2fr);
-                margin-top: 40px;
+                @include column-qs;
                 padding-bottom: 60px;
                 border-bottom: solid 3px #ffff;
                 .charla-img {
                     margin-left: 0.5cm;
                     .charla {
-                        width: 250px;
+                        width:($tamaño-img / 2);
                         border-radius: 10px;
                         margin-left: 1.3cm;
                         margin-top: 20px;
@@ -95,15 +93,13 @@
                 }
             }
             .firma-div {
-                display: grid;
-                grid-template-columns: repeat(1, 2fr);
+                @include column-qs;
                 padding-bottom: 30px;
-                margin-top: 40px;
                 border-bottom: solid 3px #0E87B7;
                 .firma-img {
                     margin-left: 0.5cm;
                     .firma {
-                        width: 250px;
+                        width:($tamaño-img / 2);
                         border-radius: 10px;
                         margin-left: 1.2cm;
                         margin-top: 20px;
